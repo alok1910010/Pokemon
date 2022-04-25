@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+"Screen width is " + screen.width;
+</script>
+<h2>Window</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Browser inner window width: " + window.innerWidth + "px<br>" +
+"Browser inner window height: " + window.innerHeight + "px";
+</script>
+<h2>Create Object from JSON String</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"pokemon":[' +
+'{"firstName":"Name","lastName":"Name" },' +
+'{"first id":"id","lastName":"id" },' +
+'{"first height":"height","lastName":"height" }]}';
+
+const obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+
+    "id": dom,
+    "name": "generation-i",
+    "abilities": [],
+    "main_region": {
+      "name": "kanto",
+      "url": "https://pokeapi.co/api/v2/region/1/"
+    },
+    "moves": [
+      {
+        "name": "pound",
+        "url": "https://pokeapi.co/api/v2/move/1/"
+      }
+    ],
+    "names": [
+      {
+        "name": "Generation I",
+        "language": {
+          "name": "de",
+          "url": "https://pokeapi.co/api/v2/language/6/"
+        }
+      }
+    ],
+    "pokemon_species": [
+      {
+        "name": "bulbasaur",
+        "url": "https://pokeapi.co/api/v2/pokemon-species/1/"
+      }
+    ],
+    "types": [
+      {
+        "name": "normal",
+        "url": "https://pokeapi.co/api/v2/type/1/"
+      }
+    ],
+    "version_groups": [
+      {
+        "name": "red-blue",
+        "url": "https://pokeapi.co/api/v2/version-group/1/"
+      
+  
+
+</body>
+</html>
